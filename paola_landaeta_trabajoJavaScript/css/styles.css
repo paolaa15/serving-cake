@@ -1,0 +1,251 @@
+:root {
+    --color-bg: #F8EBD7;
+    --color-accent: #F4B1C1;
+    --color-strong: #C56A81;
+    --color-text: #333;
+    --color-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+header {
+    background: var(--color-strong);
+    color: var(--color-white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(197,106,129,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+/* Estilos para el logo en la barra de navegación */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 12px;
+}
+
+/* Estilo para la fuente del título */
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #F8EBD7; /* Un tono pastel */
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
+    margin-right: 12px;
+}
+
+/* Estilo para la fuente del título */
+.logo span {
+    font-size: 55px;
+    font-weight: bold;
+    color: #F8EBD7; /* Un tono pastel */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    margin: 0 1.2rem;
+}
+
+nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: var(--color-accent);
+    color: var(--color-strong);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background: var(--color-white);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(197,106,129,0.07);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: var(--color-strong);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.news-item {
+    background: #F5F5DC; /* Color beige */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    border: 1px solid #F0F0F0;
+}
+
+.news-item h2 {
+    color: var(--color-strong);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.news-item p {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: var(--color-strong);
+    color: var(--color-bg);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.legal-notice {
+    font-size: 0.8em;
+}
+
+.legal-notice a {
+    color: var(--color-bg);
+    text-decoration: underline;
+}
+
+.legal-notice a:hover {
+    color: var(--color-accent);
+}
+
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto-form label {
+    font-weight: bold;
+    color: var(--color-strong);
+    margin-bottom: 10px;
+}
+
+#contacto-form input, #contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+}
+
+#contacto-form input[type="submit"] {
+    background-color: var(--color-strong);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto-form input[type="submit"]:hover {
+    background-color: var(--color-accent);
+}
+
+#mapa {
+    margin-bottom: 20px;
+}
+
+#mapa iframe {
+    border-radius: 10px;
+}
+
+#mapa button {
+    background-color: var(--color-strong);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#mapa button:hover {
+    background-color: var(--color-accent);
+}
+

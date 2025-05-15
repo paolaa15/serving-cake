@@ -1,0 +1,32 @@
+{
+    "imagenes": [
+        {
+            "ruta": "/Imágenes/img1.jpg",
+            "titulo": "Imagen 1"
+        },
+        {
+            "ruta": "/Imágenes/img2.jpg",
+            "titulo": "Imagen 2"
+        },
+        {
+            "ruta": "/Imágenes/img3.jpg",
+            "titulo": "Imagen 3"
+        },
+        {
+            "ruta": "/Imágenes/img4.jpg",
+            "titulo": "Imagen 4"
+        },
+        {
+            "ruta": "/Imágenes/img5.jpg",
+            "titulo": "Imagen 5"
+        },
+        {
+            "ruta": "/Imágenes/img6.jpg",
+            "titulo": "Imagen 6"
+        },
+        {
+            "ruta": "/Imágenes/img7.jpg",
+            "titulo": "Imagen 7"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Contacto</h2>
+      <div id="mapa">
+        <button id="obtener-ubicacion">Obtener ubicación y mostrar ruta</button>
+        <div id="ubicacion"></div>
+        <div id="ruta"></div>
+      </div>
+      <form id="contacto-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="social-media">
+        <a href="#" target="_blank"><img src="/Imágenes/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="/Imágenes/instagram.jpg" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="/Imágenes/x.png" alt="Twitter"></a>
+      </div>
+      <div class="company-info">
+        <p>Avenida de la Gavia, Madrid</p>
+      </div>
+      <div class="legal-notice">
+        <p>&copy; 2025 Serving Cake. Todos los derechos reservados.</p>
+        <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="politica-privacidad.html">Política de Privacidad</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/contacto.js"></script>
+</body>
+</html>
