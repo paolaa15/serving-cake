@@ -2,7 +2,7 @@ let indiceActual = 0;
 let imagen = document.querySelector(".galeria-carrusel img");
 
 // Cargar archivo JSON
-fetch('../imagenes.json')
+fetch('../galeria.json')
   .then(response => response.json())
   .then(data => {
     let imagenes = data.imagenes.map(imagen => imagen.ruta);
