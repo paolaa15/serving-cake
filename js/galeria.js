@@ -1,8 +1,7 @@
 let indiceActual = 0;
 let imagen = document.querySelector(".galeria-carrusel img");
 
-// Cargar archivo JSON
-fetch('./galeria.json')
+fetch('/json/galeria.json')
   .then(response => response.json())
   .then(data => {
     let imagenes = data.imagenes.map(imagen => imagen.ruta);
@@ -25,7 +24,6 @@ fetch('./galeria.json')
   })
   .catch(error => console.error('Error:', error));
 
-// Agregar clase active al enlace de navegación
 const currentPage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav ul li a');
 navLinks.forEach((link) => {
