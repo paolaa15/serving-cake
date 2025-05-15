@@ -1,4 +1,4 @@
-let imagenes = Array.from({length: 7}, (_, i) => `../Imágenes/img${i + 1}.jpg`);
+let imagenes = Array.from({length: 7}, (_, i) => `../Imagenes/img${i + 1}.jpg`);
 let indiceActual = 0;
 let imagen = document.querySelector(".galeria-carrusel img");
 
