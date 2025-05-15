@@ -12,3 +12,23 @@ fetch('/json/noticias.json')
         });
     })
     .catch(error => console.error('Error al cargar noticias:', error));
+
+    const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach((link) => {
+  if (link.href.includes(currentPage)) {
+    link.classList.add('active');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav ul li a');
+  
+    navLinks.forEach((link) => {
+      if (link.href.includes(currentPage)) {
+        link.classList.add('active');
+      }
+    });
+  });

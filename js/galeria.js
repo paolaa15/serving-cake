@@ -19,3 +19,23 @@ document.querySelector(".flecha-derecha").addEventListener("click", () => {
     indiceActual = (indiceActual + 1) % imagenes.length;
     mostrarImagen(indiceActual);
 });
+
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach((link) => {
+  if (link.href.includes(currentPage)) {
+    link.classList.add('active');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav ul li a');
+  
+    navLinks.forEach((link) => {
+      if (link.href.includes(currentPage)) {
+        link.classList.add('active');
+      }
+    });
+  });
